@@ -6,9 +6,25 @@ answer[2] = prompt ('how old are u','');
 
 document.write(answer);
 */
-const user = 'Ivan';
+let numberOfFilms = prompt('сколько фильмов вы уже посмотрели?','');
 
-alert (`привет, ${user}`);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+
+};
+const answer1 = prompt( 'один из последних просмотренных фильмов?', ''),
+    answer2 = prompt ('На сколько оцените его',''),
+    answer3 = prompt( 'один из последних просмотренных фильмов?', ''),
+    answer4 = prompt ('На сколько оцените его', '');
+
+personalMovieDB.movies[answer1] = answer2;
+personalMovieDB.genres[answer3] = answer4;
+
+console.log(personalMovieDB);
 
 
 
